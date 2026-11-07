@@ -1,0 +1,49 @@
+Чек-лист черновика (прототипа) в Unity 6 URP
+========================================
+
+Цель: Проверка базовой графики, камеры и материалов перед написанием сложной логики.
+
+[ ] Этап 1: Настройка проекта и сцены
+[ ] Шаблон: Создан проект 3D URP (Unity 6.x LTS).
+[ ] Очистка: Удалены Directional Light и Volume Profile из SampleScene.
+[ ] Освещение: Создан новый Directional Light (Поворот X: 50, Интенсивность: 1.2).
+[ ] Поверхность: Создан Plane (Ground_Obsidian, Scale: 10, 1, 10).
+
+[ ] Этап 2: Настройка камеры (Orthographic)
+[ ] Projection: Orthographic.
+[ ] Size: 15.
+[ ] Transform: Position (0, 20, 0), Rotation (90, 0, 0).
+[ ] URP Data: Anti-aliasing выключено (или MSAA 4x).
+
+[ ] Этап 3: Материалы URP (Визуальный стиль)
+[ ] Материал земли (Obsidian):
+    - Shader: URP/Lit.
+    - Color: Почти черный (#080808).
+    - Metallic: 0.9, Smoothness: 0.3.
+[ ] Материал лавы (Lava):
+    - Shader: URP/Lit.
+    - Emission Map: Подключен.
+    - Emission Color: Ярко-оранжевый.
+    - Global Illumination: Baked Indirect.
+[ ] Материал цепей (Iron):
+    - Shader: URP/Lit.
+    - Color: Темно-серый.
+    - Metallic: 0.7, Smoothness: 0.1.
+
+[ ] Этап 4: Настройки рендера (URP Asset)
+[ ] Путь: Assets/Settings/URP-Asset.asset
+[ ] Shadow Resolution: 2048.
+[ ] Shadow Distance: 100.
+[ ] HDR: Включен.
+[ ] Soft Shadows: Включен.
+
+[ ] Этап 5: Прототипирование объектов
+[ ] Prefab Building_Box создан (Cube + Obsidian материал).
+[ ] Lava_Plane создан (Plane + Lava материал).
+[ ] Тест GI: Здания подсвечиваются оранжевым от лавы.
+
+[ ] Этап 6: Оптимизация
+[ ] Quality Settings: Профиль Low или Medium.
+[ ] Save: Сцена сохранена как Prototype_URP.unity.
+
+Статус: ГОТОВ К КОДИНГУ (GRID SYSTEM)
